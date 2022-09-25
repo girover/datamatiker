@@ -123,7 +123,7 @@
                 <nav class="header__menu">
                     <ul>
                         <li class="<?php echo Request::route()->getName()=='home'?'active':'' ?>"><a href="{{route('home')}}">Home</a></li>
-                        <li class="<?php echo Request::route()->getName()=='ProductAll'?'active':'' ?>"><a href="{{route('productsAll')}}">Shop</a></li>
+                        <li class="<?php echo Request::route()->getName()=='Products'?'active':'' ?>"><a href="{{route('productsAll')}}">Shop</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                         <li class="<?php echo Request::route()->getName()=='contact'?'active':'' ?>"><a href="{{route('contact')}}">Contact</a></li>
                     </ul>

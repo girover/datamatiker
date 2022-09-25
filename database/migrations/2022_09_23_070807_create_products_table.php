@@ -18,9 +18,10 @@ return new class extends Migration
             $table->string('product_name');
             $table->string('category_id');
             $table->double('price')->nullable();
+            $table->float('sale_off')->nullable();
+            $table->string('photo')->nullable();
             $table->text('description')->nullable();
             $table->enum('status', ['0', '1', '2', '3']);
-            $table->string('photo')->nullable();
             $table->timestamps();
         });
     }

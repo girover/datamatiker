@@ -122,18 +122,10 @@
             <div class="col-lg-6">
                 <nav class="header__menu">
                     <ul>
-                        <li class="active"><a href="{{route('home')}}">Home</a></li>
-                        <li><a href="{{route('productsAll')}}">Shop</a></li>
-                        <li><a href="#">Pages</a>
-                            <ul class="header__menu__dropdown">
-                                <li><a href="./shop-details.html">Shop Details</a></li>
-                                <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                <li><a href="./checkout.html">Check Out</a></li>
-                                <li><a href="./blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
+                        <li class="<?php Request::is('home')?'active':'' ?>"><a href="{{route('home')}}">Home</a></li>
+                        <li class="<?php Request::is('ProductAll')?'active':'' ?>"><a href="{{route('productsAll')}}">Shop</a></li>
                         <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="{{route('contact')}}">Contact</a></li>
+                        <li class="<?php Request::is('contact')?'active':'' ?>"><a href="{{route('contact')}}">Contact</a></li>
                     </ul>
                 </nav>
             </div>

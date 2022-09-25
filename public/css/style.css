@@ -140,6 +140,16 @@ ol {
 	background-position: top center;
 }
 
+.product__discount__item__pic.set-bg,
+.product__item__pic.set-bg,
+.categories__item.set-bg,
+.featured__item__pic.set-bg{
+	padding: 12px;
+	background-origin: content-box !important;
+	background-size: contain !important ;
+	background-color: #f3f6fb !important;
+}
+
 .spad {
 	padding-top: 100px;
 	padding-bottom: 100px;

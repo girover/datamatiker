@@ -7,10 +7,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use \Girover\Cart\Concerns\HasCart;
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
+    use \Girover\Cart\Concerns\HasCart;
 
     /**
      * The attributes that are mass assignable.

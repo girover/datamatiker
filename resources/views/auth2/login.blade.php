@@ -33,6 +33,8 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <button type="submit" class="site-btn">Login</button>
+                        <span class="text-primary">Don't have an account?</span>
+                        <a href="{{route('register')}}" class="text-success"> Register here</a>
                     </div>
                 </div>
             </form>
